@@ -1,0 +1,695 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  scroll-snap-align: start;
+  
+}
+
+.container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  
+}
+
+.one{
+  background-image: linear-gradient(rgba(152, 137, 221, 0.3),rgba(12,3,51,0,0.3));
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  
+  
+}
+
+.two{
+  background-color:rgb(166, 194, 238);
+  
+}
+
+.three{
+  background-color: rgba(169, 48, 141, 0.866)
+}
+
+.four{
+  background-color: rgba(250, 164, 191, 0.861);
+}
+
+.five{
+  background-color: rgba(128, 188, 140, 0.613);
+}
+
+.six{
+  background-color: rgba(251, 126, 68, 0.454);
+}
+
+.seven{
+  background-color: rgba(193, 163, 241, 0.727);
+}
+
+.eight{
+  background-color: rgba(148, 155, 112, 0.522);
+}
+
+.nine{
+  background-color: #7f87b7b5;
+}
+
+.ten{
+  background-color: #8c86b4c1;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+
+section.one.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ten-back-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+section.one p{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(5, 5, 5);
+    font-size: 1rem;
+    text-align: center;
+    z-index: 1;
+    padding: 600px 30px 0px 30px;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767px){
+  /* Set the width and height to 100% for small screens */
+  .back-video{
+    width: 300%;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+} 
+
+header {
+  background-color: rgba(255, 255, 255, 0.168);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-container h1 {
+  margin-left: 6px;
+  text-transform: uppercase;
+  font-size: 2vh;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.header-container img {
+  width: 2%;
+  margin-right: 10px;
+}
+
+
+nav {
+  margin: 0;
+  padding: 0;
+
+}
+
+.navigation {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.navigation li {
+  width: 10px;
+  height: 10px;
+  background: #cfcfcf82;
+  border: 1.1px solid #ffffff;
+  border-radius: 50%;
+  margin-top: 20px;
+  transition: all 0.2s ease-in-out;
+  list-style: none;
+}
+
+.navigation li:hover,
+.navigation li.selected {
+  transform: scale(1.5);
+  background: #edecec;
+  border: 1.5px solid #ffffff;
+}
+
+#pokemonlogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 19vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 37vw;
+  padding-top: 1vh;
+}
+
+section.two, section.three, section.four, section.five, section.six, section.seven, section.eight, section.nine, section.ten {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+section.two h2, section.three h2, section.four h2, section.five h2, section.six h2, section.seven h2, section.eight h2, section.nine h2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 8vh;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 110%;
+}
+
+section.two h2 img, section.three h2 img, section.four h2 img, section.five h2 img, section.six h2 img, section.seven h2 img, section.eight h2 img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+section.nine p{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-52%);
+  z-index: 1;
+  font-size: 2.3vh;
+  font-weight: 400;
+  text-align: center;
+  line-height: 110%;;
+}
+
+section.ten h2{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 8vh;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 110%;
+}
+
+
+
+.card{
+  width: 273px;
+  height: 380px;
+  background-color: #201799;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: -3px -3px 3px 0 rgba(72, 234, 255, 0.3), 3px 3px 3px 0 rgba(174, 18, 130, 0.3), 0px 0px 6px 2px rgba(205, 93, 41, 0.3), 0px 35px 25px -15px rgba(0, 0, 0, 0.3) ;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  animation: holoCard 15s ease infinite;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+  
+}
+
+.card.enlarged {
+  width: 450px;
+  height: 650px;
+  z-index: 1;
+  position: absolute;
+  transition: transform 0.3s ease;
+
+  
+}
+
+.two .card:nth-of-type(1){
+  background-image: url(https://images.pokemontcg.io/swshp/SWSH181_hires.png);
+
+}
+
+.two .card:nth-of-type(2){
+  background-image: url(https://images.pokemontcg.io/smp/SM212_hires.png);
+
+}
+
+.two .card:nth-of-type(3){
+  background-image: url(https://images.pokemontcg.io/sm12/253_hires.png);
+}
+
+.two .card:nth-of-type(4){
+  background-image: url(https://images.pokemontcg.io/swsh2/43_hires.png);
+
+
+}
+
+
+.three .card:nth-of-type(1){
+  background-image: url(https://images.pokemontcg.io/swsh7/65_hires.png);
+}
+
+.three .card:nth-of-type(2){
+  background-image: url(https://images.pokemontcg.io/swsh10tg/TG18_hires.png);
+ /* background-image: url(https://images.pokemontcg.io/swsh11tg/TG18_hires.png); */
+}
+
+.three .card:nth-of-type(3){
+  background-image: url(https://images.pokemontcg.io/g1/RC30_hires.png);
+ /* background-image: url(https://images.pokemontcg.io/sm2/92_hires.png); */
+}
+
+.three .card:nth-of-type(4){
+background-image: url(https://images.pokemontcg.io/swsh8/269_hires.png);
+
+}
+
+.four .card:nth-of-type(1){
+  background-image: url(https://images.pokemontcg.io/xyp/XY43_hires.png);
+}
+
+.four .card:nth-of-type(2){
+  background-image: url(https://images.pokemontcg.io/swsh11tg/TG18_hires.png);
+}
+
+.four .card:nth-of-type(3){
+ background-image: url(https://images.pokemontcg.io/sm2/92_hires.png);
+}
+
+.four .card:nth-of-type(4){
+background-image: url(https://images.pokemontcg.io/xyp/XY149_hires.png);
+
+}
+
+.five .card:nth-of-type(1){
+  background-image: url(https://images.pokemontcg.io/swsh7/167_hires.png);
+}
+
+.five .card:nth-of-type(2){
+  background-image: url(https://images.pokemontcg.io/bw7/9_hires.png);
+}
+
+.five .card:nth-of-type(3){
+  background-image: url(https://images.pokemontcg.io/g1/2_hires.png);
+}
+
+.five .card:nth-of-type(4){
+  background-image: url(https://images.pokemontcg.io/xyp/XY148_hires.png);
+}
+
+.six .card:nth-of-type(1){
+  background-image: url(https://images.pokemontcg.io/g1/13_hires.png);
+}
+
+.six .card:nth-of-type(2){
+  background-image: url(https://images.pokemontcg.io/sm3/21_hires.png);
+}
+
+.six .card:nth-of-type(3){
+  background-image: url(https://images.pokemontcg.io/sm3/20_hires.png);
+}
+
+.six .card:nth-of-type(4){
+  background-image: url(https://images.pokemontcg.io/bw4/22_hires.png);
+}
+
+.seven .card:nth-of-type(1){
+  background-image: url(https://images.pokemontcg.io/sm6/56_hires.png);
+}
+
+.seven .card:nth-of-type(2){
+  background-image: url(https://images.pokemontcg.io/swsh11tg/TG06_hires.png);
+}
+
+.seven .card:nth-of-type(3){
+  background-image: url(https://images.pokemontcg.io/swsh8/157_hires.png);
+}
+
+.seven .card:nth-of-type(4){
+  background-image: url(https://images.pokemontcg.io/sm12/243_hires.png);
+}
+
+.eight .card:nth-of-type(1){
+  background-image: url(https://images.pokemontcg.io/swsh12pt5gg/GG30_hires.png);
+}
+
+.eight .card:nth-of-type(2){
+  background-image: url(https://images.pokemontcg.io/sm9/43_hires.png);
+}
+
+.eight .card:nth-of-type(3){
+  background-image: url(https://images.pokemontcg.io/sv1/208_hires.png);
+}
+
+.eight .card:nth-of-type(4){
+  background-image: url(https://images.pokemontcg.io/swsh7/51_hires.png);
+}
+
+
+.card::before,
+.card::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background-image: linear-gradient(
+    115deg, 
+      transparent 0%,
+      rgb(0, 231, 255) 30%,
+      rgb(255, 0, 231) 70%
+      transparent 100%);
+
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  mix-blend-mode: color-dodge;
+  opacity: 0.2;
+  z-index: 1;
+  animation: holoGradient 15s ease infinite;
+
+}
+
+.card::after{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif");
+  position: center;
+  background-size: 100%;
+  mix-blend-mode: color-dodge;
+  opacity: 1;
+  z-index: 2;
+  animation: holoSparkle 15s ease-in infinite;
+}
+
+.card.active::before{
+  opacity: 1;
+  animation: none;
+  transition: none;
+
+  background-image: linear-gradient(
+    115deg, 
+      transparent 0%,
+      transparent 25%,
+      rgb(0, 231, 255, 0.7) 45%,
+      rgb(255, 0, 231, 0.7) 55%
+      transparent 70%,
+      transparent 100% );
+    
+}
+
+.card.active::before,
+.card.active::after{
+  animation: none;
+
+}
+
+
+
+
+
+.card:hover,
+.card.active{
+  filter: brightness(1.2) contrast(1.2);;
+}
+
+@keyframes holoSparkle {
+  0%, 100% {
+    opacity: .75; background-position: 50% 50%; filter: brightness(1.9) contrast(1.25);
+  }
+  5%, 8% {
+    opacity: 1; background-position: 40% 40%; filter: brightness(.8) contrast(1.2);
+  }
+  13%, 16% {
+    opacity: .5; background-position: 50% 50%; filter: brightness(1.8) contrast(.8);
+  }
+  35%, 38% {
+    opacity: 1; background-position: 60% 60%; filter: brightness(1) contrast(1);
+  }
+  55% {
+    opacity: .33; background-position: 45% 45%; filter: brightness(5) contrast(1.25);
+  }
+}
+
+@keyframes holoGradient {
+  0%, 100% {
+    opacity: 0.5;
+    background-position: 50% 50%;
+    filter: brightness(.5) contrast(1);
+  }
+  5%, 9% {
+    background-position: 100% 100%;
+    opacity: 1;
+    filter: brightness(.75) contrast(1.25);
+  }
+  13%, 17% {
+    background-position: 0% 0%;
+    opacity: .88;
+  }
+  35%, 39% {
+    background-position: 100% 100%;
+    opacity: 1;
+    filter: brightness(.5) contrast(1);
+  }
+  55% {
+    background-position: 0% 0%;
+    opacity: 1;
+    filter: brightness(.75) contrast(1.25);
+  }
+}
+
+@keyframes holoCard {
+  0%, 100% {
+    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+  }
+  5%, 8% {
+    transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
+  }
+  13%, 16% {
+    transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+  }
+  35%, 38% {
+    transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+  }
+  55% {
+    transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+  }
+}
+
+.nine{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+
+}
+
+.music-container{
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(197, 212, 247, 0.6);
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 100px 0;
+}
+
+.img-container{
+  position: relative;
+  width: 100px;
+}
+
+.img-container::after{
+  content: '';
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  border-radius: 50%;
+  transform:translate(-50%, -50%)
+
+}
+
+.img-container img{
+  width: inherit;
+  height: 100px;
+  border-radius: 50%;
+  object-fit:cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+}
+
+.music-container.play .img-container img{
+  animation-play-state: running;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg)
+  }
+
+  to{
+    transform: rotate(360deg)
+  }
+}
+
+.musicnav{
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+}
+
+.action-btn{
+  background-color: #fff;
+  border: 0;
+  color: #dfdbdf;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 10px;
+}
+
+.action-btn-big{
+  color: #cdc3d0;
+  font-size: 30px;
+  border: 0;
+  background-color: #fff;
+}
+
+.action-btn:focus{
+  outline:0
+}
+
+.music-info{
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  opacity:0;
+  transform:translateY(0%);
+  padding: 10px 10px 10px 150px;
+
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.music-info h4{
+  margin: 0;
+}
+
+
+.music-container.play .music-info{
+  opacity: 1;
+  transform: translateY(-100%)
+}
+
+.progress-container{
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress{
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+
+}
+
+.music-info h4{
+  color: black;
+  font-weight: 500;
+}
+
+.music-container{
+  margin-top: 350px;
+  margin-right: 50px;
+}
