@@ -108,7 +108,7 @@ section.one p{
 
 @media (min-width: 1400px) {
   section.one p {
-    top: 80%;
+    top: 85%;
     font-size: 1rem;
     padding: 200px 30px 0px 30px;
   }
