@@ -250,6 +250,13 @@ section.two h2 img, section.three h2 img, section.four h2 img, section.five h2 i
   margin-left: 10px;
 }
 
+@media (min-width: 1400px) {
+  section.two h2 img, section.three h2 img, section.four h2 img, section.five h2 img, section.six h2 img, section.seven h2 img, section.eight h2 img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 section.nine p{
   position: absolute;
   top: 35%;
